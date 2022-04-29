@@ -9,9 +9,9 @@ const MovieList = (props) => {
           <div className="col-md-4" key={movie.id}>
             {/* {console.log(movie.id)} */}
             <div className="card mb-4 shadow-sm">
-              <img src={movie.imageURL} className="card-img-top" alt="..." />
+              <img src={`https://www.themoviedb.org/t/p/w600_and_h900_bestv2${movie.poster_path} `} className="card-img-top" alt="..." />
               <div className="card-body">
-                <h5 className="card-title">{movie.name}</h5>
+                <h5 className="card-title">{movie.title}</h5>
                 <p className="card-text">{movie.overview}</p>
                 <div className="d-flex justify-content-between align-items-center">
                   <button
@@ -24,7 +24,7 @@ const MovieList = (props) => {
                     Delete
                   </button>
                   <h2>
-                    <span className="badge bg-info">{movie.rating}</span>
+                    <span className="badge bg-info">{movie.vote_average}</span>
                   </h2>
                 </div>
               </div>
