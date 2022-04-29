@@ -80,7 +80,7 @@ export default class App extends Component {
   //     .catch((err) => console.log(err));
   // }
 
-  //! Axios Kutuphanesi
+  //! Axios Kutuphanesimeme
 
   async componentDidMount() {
     const response = await axios.get(
